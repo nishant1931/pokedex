@@ -1,0 +1,30 @@
+.range {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 100rem;
+  overflow: hidden;
+  height: 5px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.range::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: var(--percent);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+  background-color: #000;
+  animation: fill 0.3s backwards;
+}
+
+.range.range-positive::after {
+  background-color: #5bc686;
+}
+
+.range.range-negative::after {
+  background-color: #fb7171;
+}

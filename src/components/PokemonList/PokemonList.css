@@ -1,0 +1,96 @@
+.card {
+  background-color: var(--color);
+  border-radius: 12px;
+  width: calc(25% - 15px);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.pok_id {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: whitesmoke;
+}
+
+.card_name {
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_name .pok_name {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.pok_type {
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+  padding: 4px 24px;
+  text-align: center;
+  margin-bottom: 8px;
+  border-radius: 25px;
+  text-transform: capitalize;
+}
+
+.card_img {
+  height: 125px;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
+  /* background-color: red; */
+}
+
+.card_img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_name {
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.card_types {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - 5px);
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .card {
+    width: 100%;
+  }
+}

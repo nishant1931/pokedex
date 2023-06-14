@@ -1,0 +1,22 @@
+.page_not_found {
+  height: 500px;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .content_wrapper {
+  text-align: center;
+  color: var(--black-light);
+  display: flex;
+  flex-direction: column;
+} */
+
+.big_text {
+  font-size: 150px;
+  font-weight: 700;
+}
+.small_text {
+  font-size: 44px;
+}
