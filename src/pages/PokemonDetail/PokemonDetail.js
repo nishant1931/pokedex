@@ -81,8 +81,6 @@ const PokemonDetail = () => {
     getPokemonDetail();
   }, [id]);
 
-  console.log("EEEE", errorMessage);
-
   // TAB SWITCH CLASS NAME
   const getClassName = (tabName) => {
     return `tab-switch ${currentTab === tabName ? "active" : ""}`;

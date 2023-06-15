@@ -1,7 +1,6 @@
 import React from "react";
 
 const About = ({ pokemon }) => {
-  // console.log("ABOPOUT", pokemon);
   const types = pokemon?.types?.map(({ type }) => type.name).join(", ");
 
   const abilities = pokemon?.abilities

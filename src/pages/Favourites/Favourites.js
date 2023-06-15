@@ -5,7 +5,6 @@ import PokemonLists from "../../components/PokemonLists/PokemonLists";
 
 const Favourites = () => {
   const favouriteCtx = useContext(FavouritesContext);
-  console.log("FFFFF", favouriteCtx);
 
   let content;
   if (favouriteCtx.favouritePokemons.length === 0) {
@@ -17,8 +16,6 @@ const Favourites = () => {
   } else {
     content = <PokemonLists pokemonData={favouriteCtx.favouritePokemons} />;
   }
-
-  console.log(content);
 
   return (
     <section style={{ paddingTop: "70px" }}>

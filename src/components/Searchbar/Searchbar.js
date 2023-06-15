@@ -21,7 +21,7 @@ const Searchbar = () => {
           autoFocus
           type="text"
           placeholder="Search for a pokemon"
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => setQuery(e.target.value.toLowerCase())}
         />
         {/* <VscChromeClose onClick={() => setShowSearch(false)} /> */}
       </form>
